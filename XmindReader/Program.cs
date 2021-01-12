@@ -16,7 +16,19 @@ namespace XmindReader
                 GetMakingWBSCommand(),
             };
 
+#if DEBUG
+            var debugArgs = new string[] 
+            { 
+                "XmindReader",
+                "flat",
+                "../../../test.xmind",
+                "../../../../TestResults/test.csv",
+            };
+
+            var ret = await command.InvokeAsync(debugArgs);
+#else
             var ret = await command.InvokeAsync(args);
+#endif
 
             Console.WriteLine("fin.");
 

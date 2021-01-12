@@ -303,10 +303,3 @@ __pycache__/
 
 # OpenCover UI analysis results
 OpenCover/
-
-# alc_custum
-src_test/model_test/logs/
-src_test/model_test/testdata/10_output/
-src_test/alc_test/workspace/
-[Ll]ogs/
-Installer/Release_*/
